@@ -4,7 +4,7 @@ import time
 
 def main():
     print("Welcome to the DLSS Downloader!")
-    version = input("Please enter the version of the DLSS you wish to download. You can choose from the following options: 2, 3, or 4: ")
+    version = input("Please enter the version of the DLSS you wish to replace with. You can choose from the following options: 2, 3, or 4: ")
     
     if version.isdigit():
         version = int(version)
@@ -19,7 +19,7 @@ def main():
         main()
 
 def directory(dlss_version):
-    print("Please enter the directory you wish to download the DLSS to: ")
+    print("Please enter the directory you wish to download the new version of DLSS to: ")
     directory = input().strip()  # Using strip() to avoid leading/trailing spaces.
     
     # Construct the command
